@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Create from "./pages/Create";
+import ToggleColorMode from "./Color";
 
 import "./App.css";
 
@@ -26,9 +27,10 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/create" element={<Create />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="/create" element={<Create />} /> */}
       </Routes>
+      <ToggleColorMode />
     </Router>
   );
 }
